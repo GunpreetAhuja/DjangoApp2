@@ -1,0 +1,11 @@
+<h1> SHOP </h1>
+<form action= 'display' method='post'> 
+{% csrf_token %}
+    <p>Item:
+    <input type='text' value='{{item}}' ></p>
+    <p>No of items:
+    <input type='text' value='{{no_of_items}}'></p>
+    <p>
+    <input type='submit' value='Submit'></p>
+</form>
+
