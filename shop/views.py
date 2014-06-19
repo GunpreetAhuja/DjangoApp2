@@ -2,8 +2,8 @@ from django.shortcuts import render
 from django import forms
 # Create your views here.
 from shop.models import *
-from shop.forms import AddItem
-#from django.http import HttpResponseRedirect
+#from shop.forms import AddItem
+from django.http import HttpResponseRedirect
 
 def input(request):
     if request.method=='POST':
@@ -16,7 +16,7 @@ def input(request):
             no_of_items=cd['no_of_items']
             obj = Entry(item=item, no_of_items=no_of_items)
             obj.save()
-            #return HttpResponseRedirect('/display/')
+            return HttpResponseRedirect('/shop/display/')
           
     else:
         form = EntryForm()
@@ -24,7 +24,7 @@ def input(request):
      })
 
 def display(request):
-    obj = Entry.objects.get(cost=12)
+    obj = Entry.objects.get(id=9)
     item = obj.item
     cost = obj.cost
     no_of_items = obj.no_of_items
