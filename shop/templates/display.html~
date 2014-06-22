@@ -1,1 +1,10 @@
-<h1>Total amnt</h1>
+<style>
+body
+{
+ background-color: #888888;
+}
+</style>
+<p style="color:black"><font size=6>Cost per {{item}}</font></p>
+<font size=5 color=darkblue>{{cost}}</font>
+<p style="color:black"><font size=6>Total amount</font></p>
+<font size=5 color=green>{{total}}</font>

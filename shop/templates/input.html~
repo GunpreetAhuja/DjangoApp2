@@ -1,11 +1,14 @@
-<h1> SHOP </h1>
-<form action= 'display' method='post'> 
+<p style="color:pink"> <strong> <font size=6> SHOP </font></strong> </p>
+{% load staticfiles %}
+<style>
+body
+{
+ background-color: #777777;
+}
+</style>
+<img src="{% static "image.jpg" %}" alt="Shop" height='400' width='600' />
+<form action= 'display/' method='post'> 
 {% csrf_token %}
-    <p>Item:
-    <input type='text' value='{{item}}' ></p>
-    <p>No of items:
-    <input type='text' value='{{no_of_items}}'></p>
-    <p>
-    <input type='submit' value='Submit'></p>
+   {{form.as_p}}
+  <input type='submit' value='Boom' color='blue' style="color:green"/>
 </form>
-

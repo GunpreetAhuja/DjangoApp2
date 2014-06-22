@@ -62,7 +62,7 @@ WSGI_APPLICATION = 'randomz.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'run',
+        'NAME': 'shop',
         'USER': 'root',
         'PASSWORD': 'qwerty',
         'HOST': 'localhost',
