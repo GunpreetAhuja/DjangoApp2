@@ -1,9 +1,14 @@
-<h1> SHOP </h1>
+<p style="color:pink"> <strong> <font size=6> SHOP </font></strong> </p>
 {% load staticfiles %}
+<style>
+body
+{
+ background-color: #777777;
+}
+</style>
 <img src="{% static "image.jpg" %}" alt="Shop" height='400' width='600' />
-<form action= '' method='post'> 
+<form action= 'display/' method='post'> 
 {% csrf_token %}
    {{form.as_p}}
-  <input type='submit' value='Boom'>
+  <input type='submit' value='Boom' style="color:green"/>
 </form>
-
